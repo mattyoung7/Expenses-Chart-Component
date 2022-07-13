@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+}
+
+body {
+  background-color: #f8e9dd;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto 16px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 20px 22px;
+  background-color: #ec775f;
+  color: white;
+  border-radius: 10px;
+}
+
+.header .header-title {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-bottom: 4px;
+}
+
+.header .header-balance {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.chart {
+  padding: 24px 20px;
+  background-color: #fffaf5;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.chart .chart-title {
+  font-size: 24px;
+  padding-bottom: 52px;
+}
+
+.chart .canvas-container {
+  width: 303px;
+  height: 177px;
+  margin-bottom: 24px;
+}
+
+.chart hr {
+  border: 1px solid #f8e9dd;
+  margin-bottom: 24px;
+}
+
+.chart .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.chart .footer .footer-left .footer-title {
+  font-size: 15px;
+  font-weight: 400;
+  color: #93867b;
+  padding-bottom: 4px;
+}
+
+.chart .footer .footer-left .month-total {
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 4px;
+}
+
+.chart .footer .footer-right {
+  text-align: right;
+}
+
+.chart .footer .footer-right .footer-text {
+  font-size: 15px;
+  font-weight: 400;
+  color: #93867b;
+}
+
+.chart .footer .footer-right .month-perc {
+  font-weight: 700;
+  text-align: right;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    min-width: 540px;
+    gap: 1.5rem;
+  }
+  .header {
+    padding: 27px 39px 25px 32px;
+  }
+  .header .header-title {
+    font-size: 18px;
+    padding-bottom: 8px;
+  }
+  .header .header-balance {
+    font-size: 32px;
+  }
+  .chart {
+    padding: 32px 40px 40px;
+  }
+  .chart .chart-title {
+    font-size: 32px;
+    padding-bottom: 66px;
+  }
+  .chart canvas {
+    position: absolute;
+    bottom: -20px;
+  }
+  .chart .canvas-container {
+    width: 100%;
+    height: 177px;
+    position: relative;
+    margin-bottom: 32px;
+  }
+  .chart hr {
+    border: 1px solid #f8e9dd;
+    margin-bottom: 32px;
+  }
+  .chart .footer .footer-left .footer-title {
+    font-size: 18px;
+    padding-bottom: 1px;
+  }
+  .chart .footer .footer-left .month-total {
+    font-size: 48px;
+    font-weight: 700;
+  }
+  .chart .footer .footer-right .footer-text {
+    font-size: 18px;
+  }
+  .chart .footer .footer-right .month-perc {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

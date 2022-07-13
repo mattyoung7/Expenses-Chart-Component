@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <main class="container">
+    <section class="header">
+      <div class="header-balance">
+        <h1 class="header-title">My balance</h1>
+        <span class="header-balance" id="balance">$921.48</span>
+      </div>
+      <img class="logo" alt="logo" src="images/logo.svg">
+    </section>
+
+    <section class="chart">
+      <h2 class="chart-title">Spending - Last 7 days</h2>
+      <div class="canvas-container">
+        <canvas height="177" id="myChart"></canvas>
+      </div>
+      <hr>
+      <div class="footer">
+        <div class="footer-left">
+          <h3 class="footer-title">Total this month</h3>
+          <span class="month-total" id="totalSpend">$478.33</span>
+        </div>
+        <div class="footer-right">
+          <span class="month-perc">+2.4%</span>
+          <h4 class="footer-text">from last month</h4>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
